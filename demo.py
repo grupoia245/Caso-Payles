@@ -22,6 +22,7 @@ def clasificar_imagen(ruta_imagen):
         print(f"Error al enviar la imagen: {e}")
         return None
 
+
 def abrir_archivo():
     ruta_archivo = filedialog.askopenfilename()
     if ruta_archivo:
