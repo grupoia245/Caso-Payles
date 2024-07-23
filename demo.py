@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import filedialog
 from PIL import Image, ImageTk
 import requests
-
+ 
 # URL del modelo implementado en Azure
 URL_MODELO = 'https://casopayles-prediction.cognitiveservices.azure.com/customvision/v3.0/Prediction/b1bac1aa-52c1-4f02-ab07-801486c16a2a/classify/iterations/Custom%20vision%20Payles/image'
 CLAVE_PREDICCION = '7c619906a4c04dab85133f2153e51acf'
