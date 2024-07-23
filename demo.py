@@ -49,7 +49,7 @@ def abrir_archivo():
 # Configuración de la ventana principal
 root = tk.Tk()
 root.title("Clasificación de Calzado - Payles")
-root.geometry("500x600")
+root.geometry("500x700")
 root.config(bg="#f0f0f0")
 
 # Estilo para el botón
@@ -63,20 +63,33 @@ estilo_boton = {
     "pady": 5
 }
 
+# Título de la aplicación
+titulo_app = tk.Label(root, text="Clasificación de Calzado - Payles", bg="#f0f0f0", font=("Helvetica", 16, "bold"))
+titulo_app.pack(pady=10)
+
+# Título para el botón de cargar imagen
+titulo_cargar = tk.Label(root, text="Paso 1: Cargar Imagen", bg="#f0f0f0", font=("Helvetica", 14, "bold"))
+titulo_cargar.pack(pady=10)
+
 # Botón para cargar imagen
 boton_cargar = tk.Button(root, text="Cargar Imagen", command=abrir_archivo, **estilo_boton)
-boton_cargar.pack(pady=20)
+boton_cargar.pack(pady=10)
 
 # Etiqueta para mostrar la imagen cargada
 etiqueta_imagen = tk.Label(root, bg="#f0f0f0")
 etiqueta_imagen.pack(pady=20)
 
+# Título para el resultado
+titulo_resultado = tk.Label(root, text="Resultado de la Clasificación", bg="#f0f0f0", font=("Helvetica", 14, "bold"))
+titulo_resultado.pack(pady=10)
+
 # Etiqueta para mostrar el resultado
-etiqueta_resultado = tk.Label(root, text="", bg="#f0f0f0")
-etiqueta_resultado.pack(pady=20)
+etiqueta_resultado = tk.Label(root, text="", bg="#f0f0f0", font=("Helvetica", 12))
+etiqueta_resultado.pack(pady=10)
 
 # Ejecutar la aplicación
 root.mainloop()
+
 
 
 
